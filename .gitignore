@@ -1,13 +1,41 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+# =============== #
+# Unity generated #
+# =============== #
 
+Build/
+Library/
+Logs/
+MemoryCaptures/
+Obj/
+Temp/
+UnityGenerated/
+UserSettings/
+
+!/[Aa]ssets/**/*.meta
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
 ExportedObj/
-.consulo/
+*.svd
+*.userprefs
 *.csproj
-*.unityproj
+*.pidb
+*.suo
 *.sln
+*.user
+*.unityproj
+*.booproj
+*.vscode
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

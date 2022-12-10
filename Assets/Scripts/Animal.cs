@@ -11,23 +11,6 @@ public class Animal : MonoBehaviour {
     [SerializeField] int health_;
     [SerializeField] int weight_;
 
-    /*
-    [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float checkRadius;
-    [SerializeField] private LayerMask whatIsGround;
-    */
-
-    // Start is called before the first frame update
-    private void Start() {
-        
-    }
-
-    // Update is called once per frame
-    private void Update() {
-        
-    }
-
     public (float, float) GetMoveStats() {
         return (speed_, jumpForce_);
     }

@@ -3,27 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
-{
-    //[Header("Movement")]
-    //[SerializeField] private float speed_;
+public class Movement : MonoBehaviour {
+
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck_;
+    [SerializeField] private float checkRadius_;
+    [SerializeField] private LayerMask whatIsGround_;
+
+
     private Rigidbody2D rigidbody_;
 
     // Sprite orientation
     private bool facingRight_ = true;
     
     //Jumping
-    private bool isGrounded_ = true;
+    private bool isGrounded_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsGround_);
 
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Start() {
         rigidbody_ = GetComponent<Rigidbody2D>();
+        groundCheck_ = transform.Find("GroundChecker");
+        if (groundCheck_ == null) {Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!");}
+        checkRadius_ = 0.1f;
+        whatIsGround_ = LayerMask.GetMask("Ground");
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
         // get the game object who is the current active animal
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
         var (speed, jump) = animalGO.GetComponent<Animal>().GetMoveStats();

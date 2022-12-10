@@ -11,7 +11,9 @@ public class SwitchAnimals : MonoBehaviour
     // Start is called before the first frame update
     private void Start() {
         foreach(Transform child in transform) {
-            animals_.Add(child.gameObject);
+            if (child.CompareTag("Animal")) {
+                animals_.Add(child.gameObject);
+            }
         }
         currentAnimal_ = 0;
         foreach(GameObject animal in animals_) {

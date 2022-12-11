@@ -9,6 +9,6 @@ public class StartScreen : MonoBehaviour
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Intro_PolarBear");
     }
 }

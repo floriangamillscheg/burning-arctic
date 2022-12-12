@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410886313857629254}
   - component: {fileID: 7853892903295188414}
-  - component: {fileID: 6448983272260655197}
+  - component: {fileID: 1341749391329134889}
   m_Layer: 0
   m_Name: paperPlattform 4
   m_TagString: Untagged
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e50b52faf2e04a77ab35289d2235857, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 33589ab7c1d754f539891b1c1e5c292e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &6448983272260655197
+--- !u!68 &1341749391329134889
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,10 +101,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -6.486428, y: 26.632538}
-  - {x: -6.8112435, y: -20.118368}
-  - {x: 2.2771478, y: -23.126387}
-  - {x: 6.833055, y: -26.45922}
+  - {x: 7.446269, y: -28.303951}
+  - {x: -7.829116, y: -19.931833}
+  - {x: -7.0607066, y: 27.094421}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

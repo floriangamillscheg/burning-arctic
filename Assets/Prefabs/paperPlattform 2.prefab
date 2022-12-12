@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8118385372935133978}
   - component: {fileID: 7240554487656818568}
-  - component: {fileID: 4679793203876697053}
+  - component: {fileID: 9058112219257112455}
   m_Layer: 0
   m_Name: paperPlattform 2
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &4679793203876697053
+--- !u!68 &9058112219257112455
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,13 +101,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 1.5446665, y: -0.9449089}
-  - {x: 1.5362991, y: -1.2302554}
-  - {x: 1.3730738, y: -1.3634844}
-  - {x: -0.33428106, y: -0.21018511}
-  - {x: -1.7625192, y: 0.6268195}
-  - {x: -1.6662915, y: 0.9855502}
-  - {x: 1.5948706, y: -0.9753903}
+  - {x: -2.1393719, y: 0.84678465}
+  - {x: 1.4031401, y: -1.4736803}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

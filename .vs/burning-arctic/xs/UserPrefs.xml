@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animal.cs">
+    <Files>
+      <File FileName="Assets/Animal.cs" Line="83" Column="50" />
+      <File FileName="Assets/FollowTarget.cs" Line="17" Column="28" />
+      <File FileName="Assets/PushController.cs" />
+      <File FileName="Assets/Scripts/StartScreen.cs" Line="5" Column="1" />
+      <File FileName="Assets/GameOver.cs" Line="18" Column="35" />
+      <File FileName="Assets/GameManager.cs" Line="18" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="burning-arctic" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Animal.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="16acd444-c44e-454a-b072-2d341508338b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

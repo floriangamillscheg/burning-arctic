@@ -19303,19 +19303,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 414680037501924980, guid: 719056c181c884115a45991228f0da20, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 414680037501924980, guid: 719056c181c884115a45991228f0da20, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 127243f2fe0c8456fad230d31073233a, type: 2}
     - target: {fileID: 3000029504968027392, guid: 719056c181c884115a45991228f0da20, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3000029504968027392, guid: 719056c181c884115a45991228f0da20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.23
+      value: -7.108
       objectReference: {fileID: 0}
     - target: {fileID: 3000029504968027392, guid: 719056c181c884115a45991228f0da20, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.25
+      value: -4.14
       objectReference: {fileID: 0}
     - target: {fileID: 3000029504968027392, guid: 719056c181c884115a45991228f0da20, type: 3}
       propertyPath: m_LocalPosition.z

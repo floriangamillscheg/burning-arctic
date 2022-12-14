@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6618241402993659875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8982286539947575455}
-  m_Layer: 0
-  m_Name: Groundcheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8982286539947575455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6618241402993659875}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.155, y: -0.147, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3000029504968027392}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6966865705801153066
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,13 +11,12 @@ GameObject:
   - component: {fileID: 3000029504968027392}
   - component: {fileID: 414680037501924980}
   - component: {fileID: 2214054269821450418}
-  - component: {fileID: 8011263022789536623}
-  - component: {fileID: 4687734313771789815}
   - component: {fileID: 3402034881400124303}
   - component: {fileID: 6387881777744574466}
+  - component: {fileID: 547089908}
   m_Layer: 0
   m_Name: IceBear
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,8 +32,7 @@ Transform:
   m_LocalPosition: {x: -5.2697444, y: -4.1599717, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 21}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8982286539947575455}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -109,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: adc3f58de9f1340b69f030efc62fb611, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -147,50 +114,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8226719, y: 0.47204542}
   m_EdgeRadius: 0
---- !u!50 &8011263022789536623
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6966865705801153066}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &4687734313771789815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6966865705801153066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba7239f0f68b42b38b9f09088219e92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.5
-  jumpForce: 1
-  extraJumps: 1
-  health: 100
-  groundCheck: {fileID: 8982286539947575455}
-  checkRadius: 0.27
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 2147483647
-  animator: {fileID: 3402034881400124303}
-  _rigidbody: {fileID: 0}
 --- !u!95 &3402034881400124303
 Animator:
   serializedVersion: 4
@@ -223,4 +146,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa999b7ade5f48d8b2d88a5bf0eb650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 0
+  forceMagnitude: 2
+--- !u!114 &547089908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6966865705801153066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220b99874b20746aea79d3b41a1221b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed_: 2.5
+  jumpForce_: 5
+  health_: 100
+  weight_: 500
+  animator: {fileID: 0}

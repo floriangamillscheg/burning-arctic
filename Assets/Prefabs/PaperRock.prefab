@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8283651955968522738}
   - component: {fileID: 9088541289363423377}
-  - component: {fileID: 5312538139854362873}
   - component: {fileID: 5326439831422954118}
+  - component: {fileID: 6015339574410510219}
   m_Layer: 0
   m_Name: PaperRock
   m_TagString: Obstacle
@@ -75,50 +75,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b741ca0ade03a4822ad0e146cb2aaa92, type: 3}
+  m_Color: {r: 1, g: 0.9009434, b: 0.9009434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.24, y: 0.24}
+  m_Size: {x: 27.73, y: 22.584784}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &5312538139854362873
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6107877636160831778}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -6.8192782, y: 8.782345}
-  - {x: -10.318606, y: 2.9107096}
-  - {x: -12.872232, y: -0.9148604}
-  - {x: -12.606897, y: -6.799578}
-  - {x: -10.93613, y: -10.072407}
-  - {x: -8.20706, y: -11.193747}
-  - {x: 9.220216, y: -10.573804}
-  - {x: 12.559044, y: -9.975413}
-  - {x: 13.440637, y: -1.7915306}
-  - {x: 10.617193, y: 5.4665213}
-  - {x: 1.885315, y: 9.953722}
-  - {x: 0.12140983, y: 11.058107}
-  - {x: -6.9248447, y: 8.683109}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!50 &5326439831422954118
 Rigidbody2D:
   serializedVersion: 4
@@ -140,3 +107,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &6015339574410510219
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6107877636160831778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 27.73, y: 22.584784}
+    newSize: {x: 27.73, y: 22.584784}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.73, y: 22.584784}
+  m_EdgeRadius: 0

@@ -825,11 +825,7 @@ RectTransform:
   m_Children:
   - {fileID: 1163952096054439107}
   m_Father: {fileID: 1163952095856360437}
-<<<<<<< HEAD
-  m_RootOrder: 3
-=======
   m_RootOrder: 2
->>>>>>> main
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -25,7 +25,7 @@ public class Animal : MonoBehaviour {
         }
 
         if(collision.CompareTag("Obstacle") && Input.GetKey(KeyCode.F)) {
-            collision.attachedRigidbody.AddForce(Vector3.up * jumpForce);
+            collision.attachedRigidbody.AddForce(Vector3.up * jumpForce_);
             Debug.Log("Trigger Entered");
 
         }

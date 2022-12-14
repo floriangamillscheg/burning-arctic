@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InfoBox
   - Animal
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -51,6 +52,9 @@ TagManager:
     locked: 0
   - name: Obstacles
     uniqueID: 478940003
+    locked: 0
+  - name: Infoboxes
+    uniqueID: 1719641795
     locked: 0
   - name: Characters
     uniqueID: 987818241

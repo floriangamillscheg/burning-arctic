@@ -44,6 +44,7 @@ public class SwitchAnimals : MonoBehaviour
         ++currentAnimal_;
         currentAnimal_%=NumberOfAnimals();
         animals_[currentAnimal_].SetActive(true);
+        Debug.Log("Switch done");
     }
 
     public GameObject GetCurrentAnimal() {

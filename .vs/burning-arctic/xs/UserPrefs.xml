@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DisplayInfoBox.cs">
     <Files>
-      <File FileName="Assets/Animal.cs" Line="83" Column="50" />
+      <File FileName="Assets/Animal.cs" Line="82" Column="1" />
       <File FileName="Assets/FollowTarget.cs" Line="17" Column="28" />
       <File FileName="Assets/PushController.cs" />
       <File FileName="Assets/Scripts/StartScreen.cs" Line="5" Column="1" />
       <File FileName="Assets/GameOver.cs" Line="18" Column="35" />
       <File FileName="Assets/GameManager.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/DisplayInfoBox.cs" Line="11" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +15,7 @@
           <Node name="burning-arctic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Animal.cs" selected="True" />
+                <Node name="DisplayInfoBox.cs" selected="True" />
               </Node>
             </Node>
           </Node>

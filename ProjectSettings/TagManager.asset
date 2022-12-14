@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Ground
+  - Obstacle
+  - Water
   - InfoBox
   - Animal
   - Obstacle
+  - Interactable
   layers:
   - Default
   - TransparentFX

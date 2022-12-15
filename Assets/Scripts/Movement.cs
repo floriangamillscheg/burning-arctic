@@ -41,7 +41,9 @@ public class Movement : MonoBehaviour {
         } else {
             rigidbody_.velocity = new Vector2(speed * inputX, rigidbody_.velocity.y);
         }
-
+        if (animalGO.TryGetComponent(out Animator animator)) {
+            animator.SetFloat("speed", Mathf.Abs(rigidbody_.velocity.x));
+        }
         if (facingRight_ && inputX < 0) {Flip();} 
         else if (!facingRight_ && inputX > 0) {Flip();}
 

@@ -50,6 +50,7 @@ public class HareLevelCutScene : MonoBehaviour {
         newPlayer_.transform.position = startingPlayer_.transform.position;
         newPlayer_.SetActive(true);
         startingPlayer_.SetActive(false);
+        Camera.main.GetComponent<FollowTarget>().SetTarget(newPlayer_);
         MonoBehaviour[] scripts = newPlayer_.GetComponents<MonoBehaviour>();
         foreach (MonoBehaviour m in scripts) {
             m.enabled = false;

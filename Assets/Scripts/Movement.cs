@@ -5,10 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Movement : MonoBehaviour {
 
-    [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck_;
-    [SerializeField] private float checkRadius_;
-    [SerializeField] private LayerMask whatIsGround_;
+    private Transform groundCheck_;
+    private float checkRadius_;
+    private LayerMask whatIsGround_;
 
 
     private Rigidbody2D rigidbody_;

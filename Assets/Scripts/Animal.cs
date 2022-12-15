@@ -11,9 +11,6 @@ public class Animal : MonoBehaviour {
     [SerializeField] int health_;
     [SerializeField] int weight_;
 
-	
-    public Animator animator;
-
     public (float, float) GetMoveStats() {
         return (speed_, jumpForce_);
     }

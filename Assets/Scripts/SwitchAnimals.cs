@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchAnimals : MonoBehaviour
-{
-    [Header("Animals")]
-    [SerializeField] private List<GameObject> animals_;
+public class SwitchAnimals : MonoBehaviour {
+    
+    private List<GameObject> animals_ = new List<GameObject>();
     private int currentAnimal_;
 
-    // Start is called before the first frame update
     private void Awake() {
         foreach(Transform child in transform) {
             if (child.CompareTag("Animal")) {

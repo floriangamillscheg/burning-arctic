@@ -9,7 +9,7 @@ public class HareLevelCutScene : MonoBehaviour {
     [SerializeField] private GameObject startingPlayer_;
     [SerializeField] private GameObject newPlayer_;
     [SerializeField] private GameObject speech_;
-    [SerializeField] private float extPos_ = -5.5f;
+    private float extPos_ = -5.5f;
 
     //States
     private bool start_ = false;

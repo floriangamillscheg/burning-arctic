@@ -9,7 +9,7 @@ public class SwitchAnimals : MonoBehaviour
     private int currentAnimal_;
 
     // Start is called before the first frame update
-    private void Start() {
+    private void Awake() {
         foreach(Transform child in transform) {
             if (child.CompareTag("Animal")) {
                 animals_.Add(child.gameObject);
@@ -44,7 +44,6 @@ public class SwitchAnimals : MonoBehaviour
         ++currentAnimal_;
         currentAnimal_%=NumberOfAnimals();
         animals_[currentAnimal_].SetActive(true);
-        Debug.Log("Switch done");
     }
 
     public GameObject GetCurrentAnimal() {

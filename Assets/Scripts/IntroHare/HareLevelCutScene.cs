@@ -63,7 +63,6 @@ public class HareLevelCutScene : MonoBehaviour {
             m.enabled = true;
         }
         if (switch_) {
-            Debug.Log("Switch required");
             newPlayer_.gameObject.GetComponent<SwitchAnimals>().SwitchAnimal();
         }
     }

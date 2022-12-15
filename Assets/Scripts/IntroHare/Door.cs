@@ -26,7 +26,7 @@ public class Door : MonoBehaviour
     public void InfoBoxFound(Canvas infoBox)
     {
         int infoBoxID = infoBox.GetInstanceID();
-        if(foundInfoObjects.Count == 0)
+        if(foundInfoObjects.Count == 1)
         {
             Close();
             

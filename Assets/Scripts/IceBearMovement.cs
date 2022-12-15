@@ -75,7 +75,6 @@ public class IceBearMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEntter");
         if (collision.CompareTag("Water"))
         {
             GameManager._Instance.setGameOver();
@@ -85,6 +84,11 @@ public class IceBearMovement : MonoBehaviour
             collision.attachedRigidbody.AddForce(Vector3.up * jumpForce);
             Debug.Log("Trigger Entered");
 
+        }
+
+        if (collision.CompareTag("LevelExit"))
+        {
+            GameManager._Instance.LevelExit();
         }
     }
 

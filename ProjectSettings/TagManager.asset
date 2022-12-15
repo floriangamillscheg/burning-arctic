@@ -11,6 +11,8 @@ TagManager:
   - Animal
   - Obstacle
   - Interactable
+  - InfoAlert
+  - LevelExit
   layers:
   - Default
   - TransparentFX

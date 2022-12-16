@@ -38,9 +38,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Noise_Scale: 0.01
+    - _Noise_Scale: 0.015
     - _Scale: 1.2
-    - _Time_Scale: 1.73
+    - _Time_Scale: 6.86
     m_Colors:
     - _Color: {r: 0.2735849, g: 0.26971343, b: 0.26971343, a: 0}
   m_BuildTextureStacks: []

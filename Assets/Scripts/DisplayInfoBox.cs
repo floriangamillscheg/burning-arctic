@@ -10,21 +10,46 @@ public class DisplayInfoBox : MonoBehaviour {
 
     protected void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("InfoBox")) {
-            Canvas infobox = other.gameObject.GetComponentInChildren(typeof(Canvas), true) as Canvas;
-            infobox.gameObject.SetActive(true);
+            Canvas[] infoboxes = other.gameObject.GetComponentsInChildren<Canvas>(true);
+            Debug.Log(infoboxes.Length);
+            if(infoboxes.Length > 1)
+            {
+                foreach (Canvas canvas in infoboxes)
+                {
+                    Debug.Log(canvas.gameObject.name);
+                    if (canvas.CompareTag("InfoAlert"))
+                        canvas.gameObject.SetActive(false);
+                    else
+                    {
+                        canvas.gameObject.SetActive(true);
+
+                    }
+                }
+            }
+            else
+                infoboxes[0].gameObject.SetActive(true); 
         }
     }
 
     protected void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("InfoBox")) {
-            Canvas infobox = other.gameObject.GetComponentInChildren(typeof(Canvas)) as Canvas;
-            infobox.gameObject.SetActive(false);
+            Canvas[] infoboxes = other.gameObject.GetComponentsInChildren<Canvas>(true);
+            if (infoboxes.Length > 1)
+            {
+                foreach (Canvas canvas in infoboxes)
+                    if (canvas.CompareTag("InfoAlert"))
+                        canvas.gameObject.SetActive(true);
+                    else
+                        canvas.gameObject.SetActive(false);
+            }
+            else
+                infoboxes[0].gameObject.SetActive(false);
 
             // TODO: Discuss if this is this the right place for this
             GameObject door = GameObject.Find("Door");
             if (door != null)
             {
-                door.GetComponent<Door>().InfoBoxFound(infobox);
+                door.GetComponent<Door>().InfoBoxFound(other.gameObject.GetInstanceID());
             }
         }
     }

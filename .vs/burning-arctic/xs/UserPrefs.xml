@@ -1,35 +1,34 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Animal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
     <Files>
-      <File FileName="Assets/Animal.cs" Line="83" Column="50" />
-      <File FileName="Assets/FollowTarget.cs" Line="17" Column="28" />
-      <File FileName="Assets/PushController.cs" />
-      <File FileName="Assets/Scripts/StartScreen.cs" Line="5" Column="1" />
-      <File FileName="Assets/GameOver.cs" Line="18" Column="35" />
-      <File FileName="Assets/GameManager.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/Stats.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/IceBearMovement.cs" Line="91" Column="17" />
+      <File FileName="Assets/Scripts/Animal.cs" />
+      <File FileName="Assets/Scripts/StartScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameManager.cs" Line="6" Column="14" />
+      <File FileName="Assets/Scripts/DisplayInfoBox.cs" Line="22" Column="25" />
+      <File FileName="Assets/Scripts/FollowTarget.cs" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="19" Column="47" />
+      <File FileName="Assets/Scripts/Movement.cs" />
+      <File FileName="Assets/Scripts/PushController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SwitchAnimals.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="burning-arctic" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Animal.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="GameManager.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="16acd444-c44e-454a-b072-2d341508338b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f957b9e0-9fdd-48b7-9638-f7efef0c22ed" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -66,5 +66,8 @@ public class HareLevelCutScene : MonoBehaviour {
         if (switch_) {
             newPlayer_.gameObject.GetComponent<SwitchAnimals>().SwitchAnimal();
         }
+        GameObject hiddenCave = GameObject.Find("HiddenCave");
+        hiddenCave.SetActive(false);
+
     }
 }

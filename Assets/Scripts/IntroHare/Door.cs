@@ -9,7 +9,6 @@ public class Door : MonoBehaviour
     // Should be called after the rabbits enters the cave
     protected void Close()
     {
-        Debug.Log("Falle zu");
         BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
         colliders[1].enabled = true;
     }
@@ -17,23 +16,21 @@ public class Door : MonoBehaviour
     // Should be called after the last Infobox is triggered
     protected void Open()
     {
-        Debug.Log("Sesam oeffne dich");
         BoxCollider2D[] colliders = GetComponents<BoxCollider2D>();
         colliders[1].enabled = false;
     }
 
     // Should save which infoboxes are already found
-    public void InfoBoxFound(Canvas infoBox)
+    public void InfoBoxFound(int infoBoxID)
     {
-        int infoBoxID = infoBox.GetInstanceID();
-        if(foundInfoObjects.Count == 1)
-        {
-            Close();
-            
-        }
         if (!foundInfoObjects.Contains(infoBoxID))
         {
-            Debug.Log("Yey new info");
+            if (foundInfoObjects.Count == 1)
+            {
+                Close();
+
+            }
+            Debug.Log(infoBoxID);
             foundInfoObjects.Add(infoBoxID);
         }
         if (foundInfoObjects.Count == 4)

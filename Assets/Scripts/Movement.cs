@@ -5,10 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Movement : MonoBehaviour {
 
-    [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck_;
-    [SerializeField] private float checkRadius_;
-    [SerializeField] private LayerMask whatIsGround_;
+    private Transform groundCheck_;
+    private float checkRadius_;
+    private LayerMask whatIsGround_;
 
 
     private Rigidbody2D rigidbody_;
@@ -41,7 +40,9 @@ public class Movement : MonoBehaviour {
         } else {
             rigidbody_.velocity = new Vector2(speed * inputX, rigidbody_.velocity.y);
         }
-
+        if (animalGO.TryGetComponent(out Animator animator)) {
+            animator.SetFloat("speed", Mathf.Abs(rigidbody_.velocity.x));
+        }
         if (facingRight_ && inputX < 0) {Flip();} 
         else if (!facingRight_ && inputX > 0) {Flip();}
 

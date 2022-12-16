@@ -11,12 +11,10 @@ public class DisplayInfoBox : MonoBehaviour {
     protected void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("InfoBox")) {
             Canvas[] infoboxes = other.gameObject.GetComponentsInChildren<Canvas>(true);
-            Debug.Log(infoboxes.Length);
             if(infoboxes.Length > 1)
             {
                 foreach (Canvas canvas in infoboxes)
                 {
-                    Debug.Log(canvas.gameObject.name);
                     if (canvas.CompareTag("InfoAlert"))
                         canvas.gameObject.SetActive(false);
                     else

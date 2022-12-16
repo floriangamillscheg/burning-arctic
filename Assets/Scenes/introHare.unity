@@ -5988,11 +5988,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &556075522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1313005798811711617, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+  m_PrefabInstance: {fileID: 1516068928}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &556075523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1313005798811711676, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
   m_PrefabInstance: {fileID: 1516068928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &556075526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556075522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e09b5ee68600a64e8f11032f01424f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &573329537
 GameObject:
   m_ObjectHideFlags: 0
@@ -6373,7 +6390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &859721543
 Transform:
   m_ObjectHideFlags: 0
@@ -7755,11 +7772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.8
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.16
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798811711679, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_FlipX

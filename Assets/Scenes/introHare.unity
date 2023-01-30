@@ -7520,7 +7520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1295228408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14224,8 +14224,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
-      propertyPath: m_EdgeRadius
+      propertyPath: m_Size.x
+      value: 0.79884875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+      propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.2662285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1313005798811711679, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}

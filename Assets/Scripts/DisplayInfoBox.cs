@@ -48,6 +48,10 @@ public class DisplayInfoBox : MonoBehaviour {
             if (door != null)
             {
                 door.GetComponent<Door>().InfoBoxFound(other.gameObject.GetInstanceID());
+                if (other.gameObject.GetInstanceID() == -1290) {
+                    var carrot_sprite = other.gameObject.GetComponent<SpriteRenderer>();
+                    carrot_sprite.sprite = Resources.Load<Sprite>("carrot2");
+                }
             }
         }
     }

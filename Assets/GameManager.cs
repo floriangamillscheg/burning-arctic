@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     }
     public void LevelExit()
     {
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("introHare");
 
     }
 }

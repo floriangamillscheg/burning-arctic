@@ -1053,7 +1053,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1526910327}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &345146271
 EdgeCollider2D:
@@ -1753,7 +1753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.9, y: -9.1}
   m_SizeDelta: {x: 762, y: 284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646308026
@@ -10220,9 +10220,9 @@ Transform:
   - {fileID: 486825929}
   - {fileID: 309477604}
   - {fileID: 634836961}
+  - {fileID: 345146270}
   - {fileID: 1461001398}
   - {fileID: 1731146352}
-  - {fileID: 345146270}
   - {fileID: 1547374127}
   - {fileID: 1730771369}
   - {fileID: 340364732}
@@ -22606,7 +22606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 356788665064320818, guid: cdbb680d9f1394ab7adfee1e857bf993, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2837
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 356788665064320818, guid: cdbb680d9f1394ab7adfee1e857bf993, type: 3}
       propertyPath: m_LocalPosition.z

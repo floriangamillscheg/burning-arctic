@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IceBearMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/OnClick.cs">
     <Files>
-      <File FileName="Assets/Scripts/Stats.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/IceBearMovement.cs" Line="91" Column="17" />
+      <File FileName="Assets/Scripts/IntroHare/Door.cs" Line="41" Column="10" />
+      <File FileName="Assets/Scripts/Stats.cs" />
+      <File FileName="Assets/Scripts/IceBearMovement.cs" />
       <File FileName="Assets/Scripts/Animal.cs" />
       <File FileName="Assets/Scripts/StartScreen.cs" />
-      <File FileName="Assets/GameManager.cs" Line="6" Column="14" />
+      <File FileName="Assets/GameManager.cs" />
       <File FileName="Assets/Scripts/DisplayInfoBox.cs" />
-      <File FileName="Assets/Scripts/FollowTarget.cs" />
       <File FileName="Assets/Scripts/GameOver.cs" />
       <File FileName="Assets/Scripts/Movement.cs" />
       <File FileName="Assets/Scripts/PushController.cs" />
       <File FileName="Assets/Scripts/SwitchAnimals.cs" />
+      <File FileName="Assets/Scripts/IntroHare/HareLevelCutScene.cs" />
+      <File FileName="Assets/OnClick.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +21,9 @@
           <Node name="burning-arctic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="IceBearMovement.cs" selected="True" />
+                <Node name="IntroHare" expanded="True">
+                  <Node name="Door.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -29,7 +33,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="229a9b65-b4cc-4995-829e-bf0c626cf700" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="90620921-0e5e-4648-af15-04838c4d06ea" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

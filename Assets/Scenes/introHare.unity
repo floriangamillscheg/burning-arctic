@@ -18521,7 +18521,7 @@ GameObject:
   - component: {fileID: 356788665816920523}
   - component: {fileID: 356788665816920522}
   m_Layer: 0
-  m_Name: Basket_old
+  m_Name: Basket
   m_TagString: InfoBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18695,7 +18695,7 @@ GameObject:
   - component: {fileID: 356788666077345376}
   - component: {fileID: 356788666077345377}
   m_Layer: 0
-  m_Name: Food_old
+  m_Name: Food
   m_TagString: InfoBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18825,7 +18825,7 @@ GameObject:
   - component: {fileID: 356788666663127901}
   - component: {fileID: 356788666663127900}
   m_Layer: 0
-  m_Name: Computer_old
+  m_Name: Computer
   m_TagString: InfoBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

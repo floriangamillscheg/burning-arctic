@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4704133829566537329}
   - component: {fileID: 2360101598060745314}
-  - component: {fileID: 2620044748669452067}
   - component: {fileID: -8029349752390239678}
   - component: {fileID: 8808949507217708606}
+  - component: {fileID: 8301212978655770913}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Animal
@@ -87,32 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2620044748669452067
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6518027724261284141}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.09663454, y: 0.094739705}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2, y: 1.2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8551473, y: 0.54061157}
-  m_EdgeRadius: 0
 --- !u!114 &-8029349752390239678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +103,6 @@ MonoBehaviour:
   jumpForce_: 5
   health_: 100
   weight_: 500
-  animator: {fileID: 0}
 --- !u!95 &8808949507217708606
 Animator:
   serializedVersion: 4
@@ -150,3 +123,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &8301212978655770913
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518027724261284141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08890312, y: 0.088903956}
+  m_Size: {x: 0.83741444, y: 0.53061223}
+  m_Direction: 1

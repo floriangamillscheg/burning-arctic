@@ -34,8 +34,8 @@ public class Movement : MonoBehaviour {
         var (speed, jump) = animalGO.GetComponent<Animal>().GetMoveStats();
 
         float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
-        if (isGrounded_ && inputY > 0) {
+        //float inputY = Input.GetAxis("Vertical");
+        if (isGrounded_ && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))) {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
         } else {
             rigidbody_.velocity = new Vector2(speed * inputX, rigidbody_.velocity.y);

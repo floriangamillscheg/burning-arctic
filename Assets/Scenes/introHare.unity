@@ -7387,7 +7387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1295228408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14016,7 +14016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798513623134, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_text
-      value: I better take my carrot before leaving.
+      value: We better take the carrots before leaving.
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798513623134, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_fontSize
@@ -14091,8 +14091,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+      propertyPath: m_Size.x
+      value: 0.68045616
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.3461728
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313005798811711678, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}
       propertyPath: m_EdgeRadius
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1313005798811711679, guid: a6e2769aab6074cf4a7774a65c217858, type: 3}

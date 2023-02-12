@@ -1274,12 +1274,12 @@ GameObject:
   - component: {fileID: 5479241818753920389}
   - component: {fileID: 5479241818753920390}
   m_Layer: 5
-  m_Name: Infomation
+  m_Name: Information
   m_TagString: InfoBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5479241818753920391
 RectTransform:
   m_ObjectHideFlags: 0

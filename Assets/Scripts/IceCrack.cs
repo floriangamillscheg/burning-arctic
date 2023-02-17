@@ -11,6 +11,8 @@ public class IceCrack : MonoBehaviour
 
     public ParticleSystem crackParticles;
 
+    public GameObject helpBubble;
+
     [Header("Ice Crack Sprites")]
     public Sprite crackedSprite;
     public Sprite notCrackedSprite;
@@ -30,19 +32,20 @@ public class IceCrack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            SwitchAnimals.instance.AddAnimal(AnimalPrefabHolder.instance.penguin);
-        }
+        // if (Input.GetKeyDown(KeyCode.K))
+        // {
+        //     AddPenguin();
+        // }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.parent.CompareTag("Player"))
         {
-            if (!isCracked && other.transform.parent.GetComponent<Movement>().GetGroundedStatus() == false && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().name == "Bear")
+            if (!isCracked && other.transform.parent.GetComponent<Movement>().GetGroundedStatus() == false && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().name_ == "Bear")
             {
                 Debug.Log("jumped on this as bear");
+                helpBubble.SetActive(false);
                 isCracked = true;
                 penguinNpc.SetActive(true);
                 penguinNpc.GetComponent<Animator>().SetTrigger("cracked");
@@ -50,6 +53,16 @@ public class IceCrack : MonoBehaviour
                 crackParticles.Play();
                 spriteRenderer.sprite = crackedSprite;
             }
+
+            if (isCracked && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().name_ == "Penguin")
+            {
+                Debug.Log("underwater scene");
+            }
         }
+    }
+
+    public void AddPenguin()
+    {
+        SwitchAnimals.instance.AddAnimal(AnimalPrefabHolder.instance.penguin);
     }
 }

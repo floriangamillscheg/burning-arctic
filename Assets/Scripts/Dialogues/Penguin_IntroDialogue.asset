@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75e6870e92e19f49a8cb68f0d688291, type: 3}
+  m_Name: Penguin_IntroDialogue
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - speakerName: PenguinNPC
+    text: Thank you for rescuing me!
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: PenguinNPC
+    text: I was just hunting for fish and crabs underwater, but the water hole must
+      have frozen in the meantime.
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: Player
+    text: No problem. I've never seen anyone like you here before. What are you?
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: PenguinNPC
+    text: I'm a penguin, no wonder you don't know me - I usually live on the other
+      side of the world.
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: PenguinNPC
+    text: I was take here by the <color=red>Big Bad Company</color>, but normally
+      my habitat is Antarctica. What are you up to?
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: Player
+    text: I am looking for my baby bear, the Big Bad Company has kidnapped it. But
+      it seems our way is blocked by this <color=blue>big mountain</color>.
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: PenguinNPC
+    text: I'll help you find it, I know a shortcut to the other side!
+    offset: {x: 0, y: 3, z: 0}

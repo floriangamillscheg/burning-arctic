@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name_: Penguin
   speed_: 4
-  jumpForce_: 5
+  jumpForce_: 6
   health_: 40
   weight_: 6
 --- !u!70 &8943874108930622708

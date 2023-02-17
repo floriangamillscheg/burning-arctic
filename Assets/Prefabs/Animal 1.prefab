@@ -102,6 +102,7 @@ MonoBehaviour:
   jumpForce_: 7.5
   health_: 25
   weight_: 5
+  canClimb_: 1
 --- !u!70 &5187153405518688964
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

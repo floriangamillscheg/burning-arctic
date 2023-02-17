@@ -13,6 +13,8 @@ TagManager:
   - Interactable
   - InfoAlert
   - LevelExit
+  - Ladder
+  - DeathZone
   layers:
   - Default
   - TransparentFX

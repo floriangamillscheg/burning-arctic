@@ -6,7 +6,7 @@ public class Animal : MonoBehaviour {
 
     [Header("Animal Stats")]
     [SerializeField] private float speed_;
-    [SerializeField] private float jumpForce_;
+    [SerializeField] public float jumpForce_;
     //[SerializeField] private int extraJumps_; //useless
     [SerializeField] int health_;
     [SerializeField] int weight_;
@@ -16,17 +16,27 @@ public class Animal : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.CompareTag("Water")) {
+        if (collision.CompareTag("Water"))
+        {
             GameManager._Instance.setGameOver();
         }
 
-        /* What does it does ? What is it's purpose ?
-        if(collision.CompareTag("Obstacle") && Input.GetKey(KeyCode.F)) {
-            collision.attachedRigidbody.AddForce(Vector3.up * jumpForce_);
-            Debug.Log("Trigger Entered");
-
+        if (collision.CompareTag("LevelExit"))
+        {
+            GameManager._Instance.LevelExit();
         }
-        */
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DeathZone"))
+        {
+            if (!(gameObject.name == "Fox" && gameObject.GetComponent<Sneaking>().stealthActive))
+            {
+                GameManager._Instance.setGameOver();
+            }
+        }
+
     }
 }
 

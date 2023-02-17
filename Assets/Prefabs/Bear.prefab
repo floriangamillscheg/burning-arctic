@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220b99874b20746aea79d3b41a1221b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name_: Bear
   speed_: 2.5
   jumpForce_: 5
   health_: 100

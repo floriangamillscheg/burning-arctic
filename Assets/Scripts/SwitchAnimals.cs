@@ -16,7 +16,7 @@ public class SwitchAnimals : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(instance);
+            // DontDestroyOnLoad(instance);
         }
         else
         {

@@ -18,7 +18,7 @@ public class CageScene : MonoBehaviour
     //[SerializeField] private GameObject speech_;
 
     private bool sceenPlaying = false;
-    private float bubbleShowTime = 4f;
+    private float bubbleShowTime = 5f;
     private Queue<string> dialogSequence = new Queue<string>();
 
     public void StartAnimation()
@@ -48,7 +48,7 @@ public class CageScene : MonoBehaviour
                 else 
                 {
                     ShowBubble();
-                    bubbleShowTime = 4f;
+                    bubbleShowTime = 5f;
                 }
             }
             else

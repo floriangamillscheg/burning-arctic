@@ -31543,7 +31543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc52b42ad077cf478d80caf6d8b3e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 90
+  time: 40
   m_TextComponent: {fileID: 730578298}
 --- !u!1 &2022512353
 GameObject:

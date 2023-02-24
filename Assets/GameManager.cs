@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Intro_PolarBear")
             SceneManager.LoadScene("introHare");
         else if(SceneManager.GetActiveScene().name == "IntroFox")
-            SceneManager.LoadScene("EndScene");
+            SceneManager.LoadScene("Intro_Penguin");
 
     }
 }

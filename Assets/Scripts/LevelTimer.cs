@@ -45,4 +45,8 @@ public class LevelTimer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timeAsText = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void StopTimer(){
+        timerIsRunning = false;
+    }
 }

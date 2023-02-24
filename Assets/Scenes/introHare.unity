@@ -6530,29 +6530,53 @@ PrefabInstance:
       propertyPath: m_text
       value: Diet
       objectReference: {fileID: 0}
+    - target: {fileID: 5479241817243062578, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241817243062578, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241817761190119, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241817761190119, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241817761190119, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241817761190119, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -17
+      objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 537.8
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 161.11
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 283.9
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743640, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -95.555
       objectReference: {fileID: 0}
     - target: {fileID: 5479241817923743647, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_text
@@ -6560,13 +6584,21 @@ PrefabInstance:
         berries, grasses, and other plant species, but if a piece of meat falls on
         my plate I don't say no either.
       objectReference: {fileID: 0}
+    - target: {fileID: 5479241818048279351, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479241818048279351, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -17
+      objectReference: {fileID: 0}
     - target: {fileID: 5479241818741627817, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818741627817, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818753920384, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_Name
@@ -6658,15 +6690,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818995809934, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 191.11
       objectReference: {fileID: 0}
     - target: {fileID: 5479241819123907897, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5479241819123907897, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed75512375bac438f8c854cee8b01bec, type: 3}
@@ -6826,6 +6858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script_: {fileID: 1787990380}
+  newSprite_: {fileID: 0}
 --- !u!212 &1062043917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18701,7 +18734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &356788666077345391
 Transform:
   m_ObjectHideFlags: 0
@@ -19098,3 +19131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d01af472899e41c7a294e0644eefaa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animals_: []

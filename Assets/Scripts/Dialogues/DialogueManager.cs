@@ -45,6 +45,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("No dialogue is set!");
             return;
         }
+        Debug.Log("start dialogue");
 
         if (isStarted) return;
 

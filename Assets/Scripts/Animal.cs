@@ -32,7 +32,7 @@ public class Animal : MonoBehaviour
     {
         if (collision.CompareTag("DeathZone"))
         {
-            if (!(gameObject.name == "Fox(Clone)" && gameObject.GetComponent<Sneaking>().stealthActive))
+            if (!(gameObject.name == "Arctic Fox(Clone)" && gameObject.GetComponent<Sneaking>().stealthActive))
             {
                 GameManager._Instance.setGameOver();
             }

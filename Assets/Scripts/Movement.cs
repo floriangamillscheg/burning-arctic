@@ -28,8 +28,9 @@ public class Movement : MonoBehaviour
         rigidbody_ = GetComponent<Rigidbody2D>();
         groundCheck_ = transform.Find("GroundChecker");
         if (groundCheck_ == null) { Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!"); }
-        checkRadius_ = 0.1f;
+        checkRadius_ = 0.4f;
         whatIsGround_ = LayerMask.GetMask("Ground");
+      
     }
 
     // Update is called once per frame
@@ -37,13 +38,16 @@ public class Movement : MonoBehaviour
     {
         // get the game object who is the current active animal
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
-        var (speed, jump) = animalGO.GetComponent<Animal>().GetMoveStats();
+        Animal animal = animalGO.GetComponent<Animal>();
+        var (speed, jump) = animal.GetMoveStats();
+        rigidbody_.mass = animal.getMass();
 
         float inputX = Input.GetAxis("Horizontal");
         //float inputY = Input.GetAxis("Vertical");
         if (isGrounded_ && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
+            
         }
         else if (!isGrounded_ && doubleJumpEnabled && canDoubleJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {

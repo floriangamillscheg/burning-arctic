@@ -11,11 +11,13 @@ public class Animal : MonoBehaviour
     //[SerializeField] private int extraJumps_; //useless
     [SerializeField] int health_;
     [SerializeField] int weight_;
+    [SerializeField] int mass_;
 
     public (float, float) GetMoveStats()
     {
         return (speed_, jumpForce_);
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.CompareTag("Water")) {
@@ -38,6 +40,11 @@ public class Animal : MonoBehaviour
             }
         }
 
+    }
+
+    public int getMass()
+    {
+        return mass_;
     }
 }
 

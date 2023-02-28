@@ -20,7 +20,7 @@ public class SwitchAnimals : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         foreach (Transform child in transform)

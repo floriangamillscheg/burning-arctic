@@ -40,13 +40,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("start Dialogue");
         if (currentDialogue == null)
         {
             Debug.Log("No dialogue is set!");
             return;
         }
-        Debug.Log("start dialogue");
 
         if (isStarted) return;
 

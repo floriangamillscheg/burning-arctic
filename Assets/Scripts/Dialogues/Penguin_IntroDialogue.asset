@@ -28,7 +28,7 @@ MonoBehaviour:
       side of the world.
     offset: {x: 0, y: 3, z: 0}
   - speakerName: PenguinNPC
-    text: I was taken here by the <color=red>Big Bad Company</color>, but normally
+    text: I was take here by the <color=red>Big Bad Company</color>, but normally
       my habitat is Antarctica. What are you up to?
     offset: {x: 0, y: 3, z: 0}
   - speakerName: Player

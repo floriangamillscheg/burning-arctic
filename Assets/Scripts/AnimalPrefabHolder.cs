@@ -15,7 +15,6 @@ public class AnimalPrefabHolder : MonoBehaviour
     [Header("Animal Prefabs")]
     public GameObject hare;
     public GameObject polarBear;
-    public GameObject fox;
     public GameObject penguin;
 
     private void Awake()
@@ -69,19 +68,6 @@ public class AnimalPrefabHolder : MonoBehaviour
         else
         {
             Debug.Log("Player already has Hare as a playable animal!");
-        }
-    }
-
-    public void AddFoxToPlayer()
-    {
-        GameObject playerFox = player.transform.Find(fox.name).gameObject;
-        if (playerFox == null)
-        {
-            Instantiate(fox, player.transform);
-        }
-        else
-        {
-            Debug.Log("Player already has Fox as a playable animal!");
         }
     }
 }

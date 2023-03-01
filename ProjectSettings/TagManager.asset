@@ -3,15 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Obstacle
+  - Water
+  - InfoBox
+  - Animal
+  - Obstacle
+  - Interactable
+  - InfoAlert
+  - LevelExit
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,4 +49,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2294202827
+    locked: 0
+  - name: Decor
+    uniqueID: 2817214611
+    locked: 0
+  - name: Obstacles
+    uniqueID: 478940003
+    locked: 0
+  - name: Infoboxes
+    uniqueID: 1719641795
+    locked: 0
+  - name: Characters
+    uniqueID: 987818241
     locked: 0

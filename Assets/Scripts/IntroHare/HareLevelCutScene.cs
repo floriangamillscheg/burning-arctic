@@ -7,6 +7,7 @@ public class HareLevelCutScene : MonoBehaviour {
     [Header("Managed Objects")]
     [SerializeField] private GameObject hareTrapped_;
     [SerializeField] private GameObject startingPlayer_;
+    [SerializeField] private GameObject newPlayer_;
     [SerializeField] private GameObject speech_;
     private float extPos_ = -5.5f;
 
@@ -14,6 +15,7 @@ public class HareLevelCutScene : MonoBehaviour {
     private bool start_ = false;
     private bool isOut_ => hareTrapped_.transform.position.x <= extPos_;
     private bool speaking_ = false;
+    private bool switch_ = false;
 
 
 
@@ -34,6 +36,7 @@ public class HareLevelCutScene : MonoBehaviour {
                     gameObject.SetActive(false);
                 }
                 if (Input.GetKeyDown("x")) {
+                    switch_ = true;
                     speech_.SetActive(false);
                     gameObject.SetActive(false);
                 }
@@ -44,11 +47,25 @@ public class HareLevelCutScene : MonoBehaviour {
     public void StartAnimation() {
         start_ = true;
         hareTrapped_.GetComponentInChildren(typeof(Canvas)).gameObject.SetActive(false);
+        newPlayer_.transform.position = startingPlayer_.transform.position;
+        newPlayer_.SetActive(true);
+        startingPlayer_.SetActive(false);
+        Camera.main.GetComponent<FollowTarget>().SetTarget(newPlayer_);
+        MonoBehaviour[] scripts = newPlayer_.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour m in scripts) {
+            m.enabled = false;
+        }
     }
 
     private void OnDisable() {
         hareTrapped_.SetActive(false);
-        SwitchAnimals.instance.AddAnimal(AnimalPrefabHolder.instance.hare);
+        MonoBehaviour[] scripts = newPlayer_.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour m in scripts) {
+            m.enabled = true;
+        }
+        if (switch_) {
+            newPlayer_.gameObject.GetComponent<SwitchAnimals>().SwitchAnimal();
+        }
         GameObject hiddenCave = GameObject.Find("HiddenCave");
         hiddenCave.SetActive(false);
 

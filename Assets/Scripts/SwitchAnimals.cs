@@ -12,15 +12,17 @@ public class SwitchAnimals : MonoBehaviour
 
     private void Awake()
     {
-         if (instance == null)
+
+        if (instance == null)
         {
             instance = this;
-            // DontDestroyOnLoad(instance);
+            DontDestroyOnLoad(instance);
         }
         else
         {
             //Destroy(gameObject);
         }
+
         foreach (Transform child in transform)
         {
             if (child.CompareTag("Animal"))

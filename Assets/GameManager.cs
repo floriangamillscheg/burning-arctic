@@ -34,4 +34,10 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("Intro_Penguin");
 
     }
+    public void LoadIntermediateLevel()
+    {
+        Debug.Log("call Endlevel");
+        SceneManager.LoadScene("EndLevel");
+
+    }
 }

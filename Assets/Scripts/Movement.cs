@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     private Transform groundCheck_;
     private float checkRadius_;
     private LayerMask whatIsGround_;
+    private LayerMask whatIsWater_;
 
 
     private Rigidbody2D rigidbody_;
@@ -19,6 +20,7 @@ public class Movement : MonoBehaviour
 
     //Jumping
     private bool isGrounded_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsGround_);
+    private bool isOnWater_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsWater_);
     public bool doubleJumpEnabled;
     private bool canDoubleJump;
 
@@ -30,7 +32,8 @@ public class Movement : MonoBehaviour
         if (groundCheck_ == null) { Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!"); }
         checkRadius_ = 0.4f;
         whatIsGround_ = LayerMask.GetMask("Ground");
-      
+        whatIsWater_ = LayerMask.GetMask("Water");
+
     }
 
     // Update is called once per frame
@@ -44,7 +47,12 @@ public class Movement : MonoBehaviour
 
         float inputX = Input.GetAxis("Horizontal");
         //float inputY = Input.GetAxis("Vertical");
-        if (isGrounded_ && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
+
+        Debug.Log("isGrounded " + isGrounded_);
+        Debug.Log("isOnWater_ " + isOnWater_);
+
+        if ((animal.getName() == "Penguin" ||isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
+
         {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
             

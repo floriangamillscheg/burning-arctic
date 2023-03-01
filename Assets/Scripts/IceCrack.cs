@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IceCrack : MonoBehaviour
 {
@@ -57,6 +58,7 @@ public class IceCrack : MonoBehaviour
             if (isCracked && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().name_ == "Penguin")
             {
                 Debug.Log("underwater scene");
+                SceneManager.LoadScene("Penguin_Underwater");
             }
         }
     }

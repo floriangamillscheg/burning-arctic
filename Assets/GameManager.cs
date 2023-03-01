@@ -26,7 +26,18 @@ public class GameManager : MonoBehaviour
     }
     public void LevelExit()
     {
-        SceneManager.LoadScene("introHare");
+        if (SceneManager.GetActiveScene().name == "Intro_PolarBear")
+            SceneManager.LoadScene("introHare");
+        if (SceneManager.GetActiveScene().name == "introHare")
+            SceneManager.LoadScene("IntroFox");
+        else if(SceneManager.GetActiveScene().name == "IntroFox")
+            SceneManager.LoadScene("Intro_Penguin");
+
+    }
+    public void LoadIntermediateLevel()
+    {
+        Debug.Log("call Endlevel");
+        SceneManager.LoadScene("EndLevel");
 
     }
 }

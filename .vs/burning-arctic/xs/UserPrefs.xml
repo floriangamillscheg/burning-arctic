@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/OnClick.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ShakeCamera.cs">
     <Files>
-      <File FileName="Assets/Scripts/IntroHare/Door.cs" Line="41" Column="10" />
-      <File FileName="Assets/Scripts/Stats.cs" />
-      <File FileName="Assets/Scripts/IceBearMovement.cs" />
-      <File FileName="Assets/Scripts/Animal.cs" />
-      <File FileName="Assets/Scripts/StartScreen.cs" />
-      <File FileName="Assets/GameManager.cs" />
-      <File FileName="Assets/Scripts/DisplayInfoBox.cs" />
-      <File FileName="Assets/Scripts/GameOver.cs" />
-      <File FileName="Assets/Scripts/Movement.cs" />
-      <File FileName="Assets/Scripts/PushController.cs" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="52" Column="45" />
+      <File FileName="Assets/StartCutScene.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/Animal.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SwitchAnimals.cs" />
-      <File FileName="Assets/Scripts/IntroHare/HareLevelCutScene.cs" />
-      <File FileName="Assets/OnClick.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/XYMovement.cs" />
+      <File FileName="Assets/TriggerIcicle.cs" Line="52" Column="43" />
+      <File FileName="Assets/Scripts/IceCrack.cs" Line="1" Column="1" />
+      <File FileName="Assets/IcePlattform.cs" Line="23" Column="38" />
+      <File FileName="Assets/TriggerExplosion.cs" Line="106" Column="42" />
+      <File FileName="Assets/GameManager.cs" Line="34" Column="36" />
+      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Shaders/2D/Sprite-Lit-Default.shader" Line="1" Column="1" />
+      <File FileName="Assets/EnemyCutScene.cs" Line="26" Column="71" />
+      <File FileName="Assets/Scripts/IntroHare/Door.cs" Line="1" Column="1" />
+      <File FileName="Assets/DoorCutScene.cs" Line="17" Column="21" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" Line="41" Column="23" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" Line="11" Column="34" />
+      <File FileName="Assets/ShakeCamera.cs" Line="15" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,10 +25,10 @@
           <Node name="burning-arctic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="IntroHare" expanded="True">
-                  <Node name="Door.cs" selected="True" />
-                </Node>
+                <Node name="Dialogues" expanded="True" />
+                <Node name="IntroHare" expanded="True" />
               </Node>
+              <Node name="ShakeCamera.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -33,7 +37,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="90620921-0e5e-4648-af15-04838c4d06ea" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c97b4913-6d45-4067-a9af-73c38c6a94a8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

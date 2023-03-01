@@ -21,7 +21,7 @@ public class Animal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water"))
+        if (collision.CompareTag("Water") && name_ != "Penguin")
         {
             GameManager._Instance.setGameOver();
         }
@@ -38,6 +38,16 @@ public class Animal : MonoBehaviour
     public int getMass()
     {
         return mass_;
+    }
+    public string getName()
+    {
+        return name_;
+    }
+
+    enum ANIMALTYPE
+    {
+        BEAR,
+
     }
 }
 

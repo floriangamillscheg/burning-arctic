@@ -29,4 +29,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("introHare");
 
     }
+    public void LoadIntermediateLevel()
+    {
+        Debug.Log("call Endlevel");
+        SceneManager.LoadScene("EndLevel");
+
+    }
 }

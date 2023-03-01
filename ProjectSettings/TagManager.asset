@@ -13,8 +13,13 @@ TagManager:
   - Interactable
   - InfoAlert
   - LevelExit
+<<<<<<< HEAD
   - Icicle
   - IceBall
+=======
+  - Ladder
+  - DeathZone
+>>>>>>> 2ea1ace9a4347806e5244b28fde8aee8f2311a4f
   layers:
   - Default
   - TransparentFX

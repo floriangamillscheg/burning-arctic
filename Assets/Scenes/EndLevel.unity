@@ -11591,6 +11591,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (7)
@@ -11894,6 +11898,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (6)
@@ -17440,6 +17448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (1)
@@ -17497,6 +17509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform
@@ -18023,7 +18039,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &706998672
@@ -18239,6 +18255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (10)
@@ -18896,7 +18916,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 98b393a8463c94c759685391f2a7f219, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 764a4ef759e704f3d8c7348c5acdd363, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.77254903}
   m_FlipX: 0
   m_FlipY: 0
@@ -18929,6 +18949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (2)
@@ -20312,6 +20336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (8)
@@ -20499,7 +20527,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5af8fbedc21114595ac7e4c987250c35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6b236d72f51ff428c92ffc85086bb4a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25854,7 +25882,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1477752685
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -36787,6 +36815,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (11)
@@ -37309,7 +37341,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1454299839
@@ -37684,6 +37716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (3)
@@ -38219,6 +38255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (9)
@@ -43653,6 +43693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (12)
@@ -43875,7 +43919,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: bf2448db98cc647f2ad35e85ea1daa1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a33c2cd4e17a4b2b8d2c93d13d60993, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -45129,6 +45173,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (4)
@@ -45543,6 +45591,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533138258}
     m_Modifications:
+    - target: {fileID: 1711733561923826752, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1711733561923826753, guid: 5845817ac3b554be2814d0a8a36e329f, type: 3}
       propertyPath: m_Name
       value: drawnPlattform (5)

@@ -38,6 +38,11 @@ public class CageScene : MonoBehaviour
             talkingFox_.SetActive(true);
             talkingHare_.SetActive(true);
             player_.SetActive(false);
+            var guideText = timer_.GetComponentInChildren<TMP_Text>();
+            guideText.text = "Press Backspace to skip cutscene";
+            if(Input.GetKeyDown(KeyCode.Backspace)){
+                dialogSequence.Clear();
+            }
             if (dialogSequence.Count != 0)
             {
                 bubbleShowTime -= Time.deltaTime;
@@ -61,6 +66,7 @@ public class CageScene : MonoBehaviour
                 talkingHare_.SetActive(false);
                 player_.SetActive(true);
                 sceenPlaying = false;
+                guideText.text = "";
             }
         }
     }
@@ -101,13 +107,11 @@ public class CageScene : MonoBehaviour
         dialogSequence.Enqueue("Hare-I feel you.");
         dialogSequence.Enqueue("Fox-Ohh yummy, you brought a snack Mrs. Icebear?");
         dialogSequence.Enqueue("Hare-AHHHH DON'T EAT ME I DO NOT TASTE AS CUTE AS I LOOK LIKE!");
-        dialogSequence.Enqueue("Bear-Please refrain from eating my friend here, we are on a mission to save me kids.");
+        dialogSequence.Enqueue("Bear-Please don't eat my friend here, we are on a mission to save me kids.");
         dialogSequence.Enqueue("Fox-After you set me free, I guess I can't say no.");
-        dialogSequence.Enqueue("Fox-Can we go to a water at least so I can catch some fish or at least fill my belly with seaweed.");
-        dialogSequence.Enqueue("Bear-For this we have to go further. But if there are traps here, there are certainly people on the move.");
+        dialogSequence.Enqueue("Fox-Can we at least go to the sea so I can catch some fish or and fill my belly with seaweed?");
+        dialogSequence.Enqueue("Hare-I can hear water further ahead, but there are certainly people around.");
         dialogSequence.Enqueue("Fox-Don't worry, I'm an expert at sneaking past people.");
-        dialogSequence.Enqueue("Hare-Uhhuh, yeah sure...");
-        dialogSequence.Enqueue("Fox-Just watch, with R I am almost invisible and can sneak past people right in front of my nose.");
         dialogSequence.Enqueue("Fox-Unfortunately, this only works for a few seconds...");
         dialogSequence.Enqueue("Bear-A few seconds are enough if we time it well. Let's go!");
         dialogSequence.Enqueue("Bear-A few seconds are enough if we time it well. Let's go!");

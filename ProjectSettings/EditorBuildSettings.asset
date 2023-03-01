@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/introHare.unity
     guid: 7d6dec8fd6c9b41b78913ce8cc1f6be9
   - enabled: 1
+    path: Assets/Scenes/IntroFox.unity
+    guid: 568f4364ad97fdd4384c05d040b538b1
+  - enabled: 1
     path: Assets/Scenes/Intro_Penguin.unity
     guid: 511a10b40b2f9714a812cd80b5788658
   - enabled: 1

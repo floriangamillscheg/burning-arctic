@@ -52,6 +52,7 @@ public class Movement : MonoBehaviour
         Debug.Log("isOnWater_ " + isOnWater_);
 
         if ((animal.getName() == "Penguin" ||isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
+
         {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
             

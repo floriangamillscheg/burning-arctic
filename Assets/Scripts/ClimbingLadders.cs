@@ -11,7 +11,6 @@ public class ClimbingLadders : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("bumpedLadder");
         if (collision.CompareTag("Ladder"))
         {
             oldJumpForce = gameObject.GetComponent<Animal>().jumpForce_;

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9039046107365292619}
   - component: {fileID: 9039046107365292609}
   m_Layer: 0
-  m_Name: Fox
+  m_Name: Arctic Fox
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

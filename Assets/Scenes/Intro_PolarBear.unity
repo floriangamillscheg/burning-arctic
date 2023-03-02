@@ -2563,7 +2563,7 @@ GameObject:
   - component: {fileID: 863106520}
   - component: {fileID: 863106522}
   - component: {fileID: 863106521}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: paperBlockFilled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12136,7 +12136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36d5b1c116a84325bcd8c1d3e4dc7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleJumpEnabled: 0
 --- !u!114 &1855095945
 MonoBehaviour:
   m_ObjectHideFlags: 0

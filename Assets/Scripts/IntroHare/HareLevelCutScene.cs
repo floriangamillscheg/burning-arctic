@@ -44,10 +44,12 @@ public class HareLevelCutScene : MonoBehaviour {
     public void StartAnimation() {
         start_ = true;
         hareTrapped_.GetComponentInChildren(typeof(Canvas)).gameObject.SetActive(false);
+        startingPlayer_.GetComponent<Movement>().enabled = false;
     }
 
     private void OnDisable() {
         hareTrapped_.SetActive(false);
+        startingPlayer_.GetComponent<Movement>().enabled = true;
         SwitchAnimals.instance.AddAnimal(AnimalPrefabHolder.instance.hare);
         GameObject hiddenCave = GameObject.Find("HiddenCave");
         hiddenCave.SetActive(false);

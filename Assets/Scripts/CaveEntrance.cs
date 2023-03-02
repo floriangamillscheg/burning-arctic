@@ -10,7 +10,7 @@ public class CaveEntrance : MonoBehaviour
         {
             Debug.Log("Entered cave.");
 
-            other.transform.parent.GetComponent<Movement>().enabled = true;
+            other.transform.parent.GetComponent<PenguinMovement>().enabled = true;
             other.transform.parent.GetComponent<XYMovement>().enabled = false;
             other.transform.parent.Find("Bubbles").gameObject.SetActive(false);
         }

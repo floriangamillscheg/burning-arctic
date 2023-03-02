@@ -1167,15 +1167,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5479241817923743647, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_text
-      value: 'The polar bears'' floes are melting away, they are living on thin ice.
+      value: 'Our floes are slowly melting away, and thats where we live: on thin
+        ice.
 
 
-        Polar
-        bears spend the long winters and spring on the pack ice. They need the ice
-        cover as a platform for hunting seals. But man-made climate change is rapidly
-        altering the Arctic ecosystem; the ice has been receding faster and faster
-        for years and takes longer to refreeze in winter. The polar bears have no
-        time to adapt. This makes survival difficult, especially for young animals.'
+        Usually we spend the long winters and springs on the pack
+        ice. We need the ice cover as a platform for hunting seals. But man-made
+        climate change is rapidly altering the Arctic ecosystem; the ice has been
+        receding faster and faster for years and takes longer to refreeze in winter.
+        We polar bears have no time to adapt. This makes survival difficult for us,
+        but especially for our young animals.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818753920384, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_Name
@@ -2455,12 +2458,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5479241817923743647, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_text
-      value: "About the Population:\n\nThe population is currently estimated at around
-        22,000 to 31,000 polar bears. \nMost polar bears live in Canada. \n\nPolar
-        bears are considered endangered. \nAny international commercial trade is
-        strictly regulated. \nOn a national level, Alaska, Canada and Greenland allow
-        hunting of polar bears by indigenous peoples and national trade. \nCanada
-        moreover offers the opportunity for trophy hunting of polar bears."
+      value: "Our population is currently estimated at around 22,000 to 31,000 polar
+        bears. \nMost of us live in Canada. \n\nCurrently we are considered to be
+        endangered. Thats why any commercial trade is strictly regulated internationally.
+        \nHowever, on a national level Alaska, Canada and Greenland allow hunting
+        us by indigenous people and absurdly enough, for national trade. \nCan you
+        imagine Canada even offers the opportunity for trophy hunting of polar bears!\n\t"
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818753920384, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_Name
@@ -2807,16 +2810,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5479241817923743647, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_text
-      value: "Carnivores, prey almost exclusively on seals, seasonal buildup of fat
-        reserves, \nfemales fast for up to 8 months during pup rearing, play important
-        role in ecosystem as apex predators\n\nThe survival of polar bears depends
-        on them being able to eat enough fat reserves in winter for the food-poor
-        summer and fall. \n\nClimate change shortens the hunting season for polar
-        bears. \nThe ice melts earlier at the beginning of the summer half-year and
-        freezes again later in the winter. \nAs a result, polar bears build up fewer
-        reserves and are in poorer condition. \nThe worse the nutritional condition
-        of polar bears or female polar bears, \nthe lower the reproductive rate as
-        well as the survival rate of the cubs."
+      value: "We almost exclusively prey on seals and build up seasonal fat reserves.\nThe
+        female polar bears ike me, fast for up to 8 months during pup rearing, and
+        we play an important role in our ecosystem as apex predators.\n\nOur survival
+        depends on our ability to eat enough fat reserves in winter for the food-poor
+        summer and fall. \n\nUnfortunately climate change shortens our hunting season.\nThe
+        ice melts earlier at the beginning of the summer half-year and freezes later
+        in the winter. \nAs a result, our conditions to build up fat reserves are
+        poorer.\nThe worse our nutritional condition, \nthe lower the reproductive
+        rate as well as the survival rate of our cubs.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5479241818753920384, guid: af46e6e06c7d23b419a29c1e6b746fcf, type: 3}
       propertyPath: m_Name

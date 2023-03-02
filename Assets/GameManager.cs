@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("IntroFox");
         else if(SceneManager.GetActiveScene().name == "IntroFox")
             SceneManager.LoadScene("Intro_Penguin");
+        else if (SceneManager.GetActiveScene().name == "Penguin_Underwater")
+            SceneManager.LoadScene("intermediateLevel");
         else if (SceneManager.GetActiveScene().name == "EndLevel")
             SceneManager.LoadScene("EndScene");
 

@@ -10,10 +10,10 @@ public class OpenDoor : MonoBehaviour {
     [SerializeField] private GameObject camera_;
     private bool cameraSwitch_ = true;
     private GameObject player_;
-    private FollowTarget follow_;
+    private FollowTargetI follow_;
 
     protected void Start() {
-        follow_ = camera_.GetComponent<FollowTarget>();
+        follow_ = camera_.GetComponent<FollowTargetI>();
     }
 
     protected void Update () {

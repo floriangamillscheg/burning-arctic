@@ -29,4 +29,7 @@ public class FollowTarget : MonoBehaviour
         target_ = target;
     }
 
+    public GameObject GetTarget() {
+        return target_;
+    }
 }

@@ -4,9 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Movement : MonoBehaviour {
-
-    //private Transform groundCheck_;
-    //private float checkRadius_;
+    
     private LayerMask whatIsGround_;
     private LayerMask whatIsWater_;
 
@@ -24,20 +22,15 @@ public class Movement : MonoBehaviour {
     private bool canDoubleJump;
 
     // Start is called before the first frame update
-    private void Start()
-    {
+    private void Start() {
         rigidbody_ = GetComponent<Rigidbody2D>();
-        /*groundCheck_ = transform.Find("GroundChecker");
-        if (groundCheck_ == null) { Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!"); }
-        checkRadius_ = 0.4f;*/
         whatIsGround_ = LayerMask.GetMask("Ground");
         whatIsWater_ = LayerMask.GetMask("Water");
 
     }
 
     // Update is called once per frame
-    private void Update()
-    {
+    private void Update() {
         // get the game object who is the current active animal
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
         Animal animal = animalGO.GetComponent<Animal>();
@@ -46,9 +39,6 @@ public class Movement : MonoBehaviour {
 
         float inputX = Input.GetAxis("Horizontal");
         //float inputY = Input.GetAxis("Vertical");
-
-        Debug.Log("isGrounded " + isGrounded_);
-        Debug.Log("isOnWater_ " + isOnWater_);
 
         if ((animal.getName() == "Penguin" || isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
@@ -80,14 +70,12 @@ public class Movement : MonoBehaviour {
 
     }
 
-    private void Flip()
-    {
+    private void Flip() {
         facingRight_ = !facingRight_;
         transform.Rotate(0, 180, 0);
     }
 
-    public bool GetGroundedStatus()
-    {
+    public bool GetGroundedStatus() {
         return isGrounded_;
     }
 

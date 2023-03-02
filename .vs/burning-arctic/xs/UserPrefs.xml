@@ -1,24 +1,27 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IntroFox/CageScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DisplayInfoBox.cs">
     <Files>
       <File FileName="Assets/Scripts/Movement.cs" Line="52" Column="1" />
-      <File FileName="Assets/StartCutScene.cs" />
+      <File FileName="Assets/StartCutScene.cs" Line="36" Column="17" />
       <File FileName="Assets/Scripts/Animal.cs" Line="39" Column="91" />
       <File FileName="Assets/Scripts/SwitchAnimals.cs" />
       <File FileName="Assets/Scripts/XYMovement.cs" />
       <File FileName="Assets/TriggerIcicle.cs" />
       <File FileName="Assets/Scripts/IceCrack.cs" />
       <File FileName="Assets/IcePlattform.cs" />
-      <File FileName="Assets/TriggerExplosion.cs" />
-      <File FileName="Assets/GameManager.cs" />
+      <File FileName="Assets/TriggerExplosion.cs" Line="106" Column="29" />
+      <File FileName="Assets/GameManager.cs" Line="39" Column="38" />
       <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Shaders/2D/Sprite-Lit-Default.shader" />
       <File FileName="Assets/EnemyCutScene.cs" />
       <File FileName="Assets/Scripts/IntroHare/Door.cs" />
-      <File FileName="Assets/DoorCutScene.cs" Line="8" Column="5" />
-      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" />
-      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" />
-      <File FileName="Assets/ShakeCamera.cs" />
+      <File FileName="Assets/DoorCutScene.cs" Line="31" Column="33" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" Line="60" Column="1" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" Line="1" Column="1" />
+      <File FileName="Assets/ShakeCamera.cs" Line="15" Column="38" />
       <File FileName="Assets/Scripts/IntroFox/CageScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/startBabyDialogue.cs" Line="32" Column="38" />
+      <File FileName="Assets/Scripts/EndScreen.cs" Line="13" Column="44" />
+      <File FileName="Assets/Scripts/DisplayInfoBox.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,10 +30,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Dialogues" expanded="True" />
-                <Node name="IntroFox" expanded="True">
-                  <Node name="CageScene.cs" selected="True" />
-                </Node>
+                <Node name="IntroFox" expanded="True" />
                 <Node name="IntroHare" expanded="True" />
+                <Node name="DisplayInfoBox.cs" selected="True" />
               </Node>
             </Node>
           </Node>

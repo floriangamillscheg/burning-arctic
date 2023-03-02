@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
-{
+public class Movement : MonoBehaviour {
 
-    private Transform groundCheck_;
-    private float checkRadius_;
+    //private Transform groundCheck_;
+    //private float checkRadius_;
     private LayerMask whatIsGround_;
     private LayerMask whatIsWater_;
 
@@ -19,8 +18,8 @@ public class Movement : MonoBehaviour
     private bool facingRight_ = true;
 
     //Jumping
-    private bool isGrounded_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsGround_);
-    private bool isOnWater_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsWater_);
+    private bool isGrounded_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsGround_);
+    private bool isOnWater_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsWater_);
     public bool doubleJumpEnabled;
     private bool canDoubleJump;
 
@@ -28,9 +27,9 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         rigidbody_ = GetComponent<Rigidbody2D>();
-        groundCheck_ = transform.Find("GroundChecker");
+        /*groundCheck_ = transform.Find("GroundChecker");
         if (groundCheck_ == null) { Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!"); }
-        checkRadius_ = 0.4f;
+        checkRadius_ = 0.4f;*/
         whatIsGround_ = LayerMask.GetMask("Ground");
         whatIsWater_ = LayerMask.GetMask("Water");
 
@@ -51,11 +50,9 @@ public class Movement : MonoBehaviour
         Debug.Log("isGrounded " + isGrounded_);
         Debug.Log("isOnWater_ " + isOnWater_);
 
-        if ((animal.getName() == "Penguin" ||isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
-
+        if ((/*animal.getName() == "Penguin" ||*/ isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
-            
         }
         else if (!isGrounded_ && doubleJumpEnabled && canDoubleJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {

@@ -33,6 +33,9 @@ public class DoorCutScene : MonoBehaviour
         collider.enabled = false;
         dialogueManager.currentDialogue = enemyDialogue;
         dialogueManager.StartDialogue(enemyDialogue);
-        enemy.GetComponent<EnemyCutScene>().startAnimation();
+        EnemyCutScene[] enemyCutScene = enemy.GetComponentsInChildren<EnemyCutScene>();
+        foreach(EnemyCutScene cutscene in enemyCutScene)
+            cutscene.GetComponent<EnemyCutScene>().startAnimation();
+
     }
 }

@@ -4,17 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - IceBall
+  - Water
+  - Icicle
+  - Animal
+  - InfoBox
   - Ground
   - Obstacle
   - Water
   - InfoBox
   - Animal
-  - Obstacle
   - Interactable
   - InfoAlert
   - LevelExit
   - Ladder
   - DeathZone
+  - cutScene4
   layers:
   - Default
   - TransparentFX

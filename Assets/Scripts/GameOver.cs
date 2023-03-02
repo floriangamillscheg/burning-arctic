@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
     public void Restart()
     {
         Debug.Log("Pressed restart");
-        SceneManager.LoadScene("Intro_PolarBear");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void BackToMenu()

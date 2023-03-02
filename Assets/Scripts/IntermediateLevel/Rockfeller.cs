@@ -6,13 +6,13 @@ public class Rockfeller : MonoBehaviour {
 
     private double timer_ = -1;
     [SerializeField] private GameObject camera_;
-    private FollowTarget follow_;
+    private FollowTargetI follow_;
     [SerializeField] private GameObject rocks_;
 
 
     // Start is called before the first frame update
     private void Start() {
-        follow_ = camera_.GetComponent<FollowTarget>();
+        follow_ = camera_.GetComponent<FollowTargetI>();
     }
 
     // Update is called once per frame

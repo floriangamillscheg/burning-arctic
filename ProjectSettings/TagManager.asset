@@ -15,14 +15,14 @@ TagManager:
   - LevelExit
   - Ladder
   - DeathZone
-layers:
+  layers:
   - Default
   - TransparentFX
   - Ignore Raycast
   - Ground
   - Water
   - UI
-  - Background
+  - 
   - 
   - 
   - 
@@ -53,17 +53,17 @@ layers:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 2294202827
+    uniqueID: 939831263
     locked: 0
   - name: Decor
-    uniqueID: 2817214611
+    uniqueID: 3728293555
     locked: 0
   - name: Obstacles
-    uniqueID: 478940003
+    uniqueID: 2072977909
     locked: 0
   - name: Infoboxes
-    uniqueID: 1719641795
+    uniqueID: 4142939685
     locked: 0
   - name: Characters
-    uniqueID: 987818241
+    uniqueID: 2441499793
     locked: 0

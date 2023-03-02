@@ -8,9 +8,13 @@ TagManager:
   - Water
   - Icicle
   - Animal
-  - Obstacle
   - InfoBox
   - Ground
+  - Obstacle
+  - Water
+  - InfoBox
+  - Animal
+  - Interactable
   - InfoAlert
   - LevelExit
   - Ladder
@@ -52,4 +56,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 939831263
+    locked: 0
+  - name: Decor
+    uniqueID: 3728293555
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2072977909
+    locked: 0
+  - name: Infoboxes
+    uniqueID: 4142939685
+    locked: 0
+  - name: Characters
+    uniqueID: 2441499793
     locked: 0

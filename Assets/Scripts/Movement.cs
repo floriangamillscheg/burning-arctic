@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
-{
-
-    private Transform groundCheck_;
-    private float checkRadius_;
+public class Movement : MonoBehaviour {
+    
     private LayerMask whatIsGround_;
     private LayerMask whatIsWater_;
 
@@ -19,26 +16,21 @@ public class Movement : MonoBehaviour
     private bool facingRight_ = true;
 
     //Jumping
-    private bool isGrounded_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsGround_);
-    private bool isOnWater_ => Physics2D.OverlapCircle(groundCheck_.position, checkRadius_, whatIsWater_);
+    private bool isGrounded_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsGround_);
+    private bool isOnWater_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsWater_);
     public bool doubleJumpEnabled;
     private bool canDoubleJump;
 
     // Start is called before the first frame update
-    private void Start()
-    {
+    private void Start() {
         rigidbody_ = GetComponent<Rigidbody2D>();
-        groundCheck_ = transform.Find("GroundChecker");
-        if (groundCheck_ == null) { Debug.unityLogger.Log("ERROR!!! GroudChecker not found!!!"); }
-        checkRadius_ = 0.4f;
         whatIsGround_ = LayerMask.GetMask("Ground");
         whatIsWater_ = LayerMask.GetMask("Water");
 
     }
 
     // Update is called once per frame
-    private void Update()
-    {
+    private void Update() {
         // get the game object who is the current active animal
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
         Animal animal = animalGO.GetComponent<Animal>();
@@ -48,11 +40,9 @@ public class Movement : MonoBehaviour
         float inputX = Input.GetAxis("Horizontal");
         //float inputY = Input.GetAxis("Vertical");
 
-        if ((animal.getName() == "Penguin" ||isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
-
+        if ((animal.getName() == "Penguin" || isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
-            
         }
         else if (!isGrounded_ && doubleJumpEnabled && canDoubleJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
@@ -80,14 +70,12 @@ public class Movement : MonoBehaviour
 
     }
 
-    private void Flip()
-    {
+    private void Flip() {
         facingRight_ = !facingRight_;
         transform.Rotate(0, 180, 0);
     }
 
-    public bool GetGroundedStatus()
-    {
+    public bool GetGroundedStatus() {
         return isGrounded_;
     }
 

@@ -17,8 +17,12 @@ MonoBehaviour:
     text: MY BABY!! You are here!! Did you miss me?
     offset: {x: 0, y: 3, z: 0}
   - speakerName: babyBear
-    text: Gugugagagguuuu
+    text: Gugu Gaga
     offset: {x: 0, y: 3, z: 0}
-  - speakerName: IceBear
+  - speakerName: Player
     text: I love you too baby bear!
+    offset: {x: 0, y: 3, z: 0}
+  - speakerName: Player
+    text: Look these are my friends, the hare, the penguin and the fox. We even destroyed
+      the BBC!
     offset: {x: 0, y: 3, z: 0}

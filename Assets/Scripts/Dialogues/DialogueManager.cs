@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
 
         activeSpeechBubble = Instantiate(speechBubblePf, dialogueCanvas.transform);
         dialogueText = activeSpeechBubble.GetComponentInChildren<TextMeshProUGUI>();
+    
 
         GameObject speaker = GetGameObjectByName(currentDialogue.dialogueLines[currentLineIndex].speakerName);
         activeSpeechBubble.transform.position = speaker.transform.position + currentDialogue.dialogueLines[currentLineIndex].offset;
@@ -70,7 +71,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentLineIndex < currentDialogue.dialogueLines.Count - 1)
         {
-            currentLineIndex++;
+            currentLineIndex++; 
             GameObject speaker = GetGameObjectByName(currentDialogue.dialogueLines[currentLineIndex].speakerName);
             activeSpeechBubble.transform.position = speaker.transform.position + currentDialogue.dialogueLines[currentLineIndex].offset;
             dialogueText.text = currentDialogue.dialogueLines[currentLineIndex].text;
@@ -99,6 +100,7 @@ public class DialogueManager : MonoBehaviour
         GameObject go = GameObject.Find(name);
         return go;
     }
+   
 }
 
 public enum DialogueState

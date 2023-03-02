@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
@@ -19,6 +19,10 @@ public class TriggerExplosion : MonoBehaviour
     private float explosionMulti = 10000.0f;
     [SerializeField]
     private CinemachineVirtualCamera camera;
+    [SerializeField]
+    private GameObject oil_drig;
+    [SerializeField]
+    private GameObject scrapMetal;
     [SerializeField]
     private Animator doorAnimator;
     ParticleSystem[] particleSystems;
@@ -98,7 +102,8 @@ public class TriggerExplosion : MonoBehaviour
     private void stopCutScene()
     {
         cutSceneAnimator.SetBool("cutScene4", false);
-        Debug.Log("call openDoor");
+        oil_drig.SetActive(false);
+        scrapMetal.SetActive(true);
         doorAnimator.SetTrigger("openDoor");
     }
 }

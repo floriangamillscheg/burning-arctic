@@ -68,7 +68,7 @@ public class SwitchAnimals : MonoBehaviour
 
     public void AddAnimal(GameObject animal)
     {
-        GameObject checkAnimal = animals_.Where(obj => obj.GetComponent<Animal>().name_ == animal.name).SingleOrDefault();
+        GameObject checkAnimal = animals_.Where(obj => obj.GetComponent<Animal>().getName() == animal.name).SingleOrDefault();
 
         if (!animals_.Contains(checkAnimal))
         {

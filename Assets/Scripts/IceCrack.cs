@@ -43,7 +43,7 @@ public class IceCrack : MonoBehaviour
     {
         if (other.transform.parent.CompareTag("Player"))
         {
-            if (!isCracked && other.transform.parent.GetComponent<Movement>().GetGroundedStatus() == false && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().name_ == "Bear")
+            if (!isCracked && other.transform.parent.GetComponent<Movement>().GetGroundedStatus() == false && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().getName() == "Bear")
             {
                 Debug.Log("jumped on this as bear");
                 helpBubble.SetActive(false);
@@ -55,7 +55,7 @@ public class IceCrack : MonoBehaviour
                 spriteRenderer.sprite = crackedSprite;
             }
 
-            if (isCracked && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().name_ == "Penguin")
+            if (isCracked && other.transform.parent.GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<Animal>().getName() == "Penguin")
             {
                 Debug.Log("underwater scene");
                 SceneManager.LoadScene("Penguin_Underwater");

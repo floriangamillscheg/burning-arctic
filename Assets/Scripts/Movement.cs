@@ -5,12 +5,12 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Movement : MonoBehaviour {
     
+    // Layers
     private LayerMask whatIsGround_;
     private LayerMask whatIsWater_;
 
-
+    // body
     private Rigidbody2D rigidbody_;
-
 
     // Sprite orientation
     private bool facingRight_ = true;
@@ -18,15 +18,12 @@ public class Movement : MonoBehaviour {
     //Jumping
     private bool isGrounded_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsGround_);
     private bool isOnWater_ => GetComponent<SwitchAnimals>().GetCurrentAnimal().GetComponent<CapsuleCollider2D>().IsTouchingLayers(whatIsWater_);
-    public bool doubleJumpEnabled;
-    private bool canDoubleJump;
 
     // Start is called before the first frame update
     private void Start() {
         rigidbody_ = GetComponent<Rigidbody2D>();
         whatIsGround_ = LayerMask.GetMask("Ground");
         whatIsWater_ = LayerMask.GetMask("Water");
-
     }
 
     // Update is called once per frame
@@ -34,30 +31,25 @@ public class Movement : MonoBehaviour {
         // get the game object who is the current active animal
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
         Animal animal = animalGO.GetComponent<Animal>();
-        var (speed, jump) = animal.GetMoveStats();
+        var (speed, jumpforce, jumpsleft) = animal.GetMoveStats();
         rigidbody_.mass = animal.getMass();
 
         float inputX = Input.GetAxis("Horizontal");
-        //float inputY = Input.GetAxis("Vertical");
 
-        if ((animal.getName() == "Penguin" || isGrounded_) && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
-        {
-            rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
-        }
-        else if (!isGrounded_ && doubleJumpEnabled && canDoubleJump && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)))
-        {
-            canDoubleJump = false;
-            rigidbody_.velocity = new Vector2(speed * inputX, 1 * jump);
-        }
-        else
-        {
+        if (isGrounded_ && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))) {
+            rigidbody_.velocity = new Vector2(speed * inputX, jumpforce);
+        } else if (!isOnWater_ && jumpsleft > 0 && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))) {
+            rigidbody_.velocity = new Vector2(speed * inputX, jumpforce);
+            animal.UseExtraJump();
+        } else if (isOnWater_ && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))) {
+            rigidbody_.velocity = new Vector2(speed * inputX, speed);
+        } else if (isOnWater_ && Input.GetKeyDown(KeyCode.DownArrow)) {
+            rigidbody_.velocity = new Vector2(speed * inputX, -speed);
+        } else {
             rigidbody_.velocity = new Vector2(speed * inputX, rigidbody_.velocity.y);
         }
 
-        if (isGrounded_ && !canDoubleJump && doubleJumpEnabled)
-        {
-            canDoubleJump = true;
-        }
+        if (isGrounded_) {animal.ResetJumps();}
 
         if (animalGO.TryGetComponent(out Animator animator))
         {

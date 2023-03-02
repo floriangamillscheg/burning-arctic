@@ -102,6 +102,7 @@ MonoBehaviour:
   name_: Penguin
   speed_: 4
   jumpForce_: 6
+  extraJumps_: 1
   health_: 40
   weight_: 6
   mass_: 0

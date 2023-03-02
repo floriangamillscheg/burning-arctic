@@ -5,19 +5,22 @@ using UnityEngine;
 public class Animal : MonoBehaviour
 {
     [Header("Animal Stats")]
-    public string name_;
+    [SerializeField] private string name_;
     [SerializeField] private float speed_;
     [SerializeField] public float jumpForce_;
-    //[SerializeField] private int extraJumps_; //useless
+    [SerializeField] private int extraJumps_;
+    private int jumpsleft_;
     [SerializeField] int health_;
     [SerializeField] int weight_;
     [SerializeField] int mass_;
 
-    public (float, float) GetMoveStats()
-    {
-        return (speed_, jumpForce_);
+    public (float, float, int) GetMoveStats() {
+        return (speed_, jumpForce_, jumpsleft_);
     }
 
+    public void UseExtraJump() {--jumpsleft_;}
+
+    public void ResetJumps() {jumpsleft_ = extraJumps_;}
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -48,6 +51,7 @@ public class Animal : MonoBehaviour
     {
         return mass_;
     }
+
     public string getName()
     {
         return name_;

@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ShakeCamera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/IntroFox/CageScene.cs">
     <Files>
-      <File FileName="Assets/Scripts/Movement.cs" Line="52" Column="45" />
-      <File FileName="Assets/StartCutScene.cs" Line="25" Column="1" />
-      <File FileName="Assets/Scripts/Animal.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="52" Column="1" />
+      <File FileName="Assets/StartCutScene.cs" />
+      <File FileName="Assets/Scripts/Animal.cs" Line="39" Column="91" />
       <File FileName="Assets/Scripts/SwitchAnimals.cs" />
       <File FileName="Assets/Scripts/XYMovement.cs" />
-      <File FileName="Assets/TriggerIcicle.cs" Line="52" Column="43" />
-      <File FileName="Assets/Scripts/IceCrack.cs" Line="1" Column="1" />
-      <File FileName="Assets/IcePlattform.cs" Line="23" Column="38" />
-      <File FileName="Assets/TriggerExplosion.cs" Line="106" Column="42" />
-      <File FileName="Assets/GameManager.cs" Line="34" Column="36" />
-      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Shaders/2D/Sprite-Lit-Default.shader" Line="1" Column="1" />
-      <File FileName="Assets/EnemyCutScene.cs" Line="26" Column="71" />
-      <File FileName="Assets/Scripts/IntroHare/Door.cs" Line="1" Column="1" />
-      <File FileName="Assets/DoorCutScene.cs" Line="17" Column="21" />
-      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" Line="41" Column="23" />
-      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" Line="11" Column="34" />
-      <File FileName="Assets/ShakeCamera.cs" Line="15" Column="38" />
+      <File FileName="Assets/TriggerIcicle.cs" />
+      <File FileName="Assets/Scripts/IceCrack.cs" />
+      <File FileName="Assets/IcePlattform.cs" />
+      <File FileName="Assets/TriggerExplosion.cs" />
+      <File FileName="Assets/GameManager.cs" />
+      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Shaders/2D/Sprite-Lit-Default.shader" />
+      <File FileName="Assets/EnemyCutScene.cs" />
+      <File FileName="Assets/Scripts/IntroHare/Door.cs" />
+      <File FileName="Assets/DoorCutScene.cs" Line="8" Column="5" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" />
+      <File FileName="Assets/ShakeCamera.cs" />
+      <File FileName="Assets/Scripts/IntroFox/CageScene.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,9 +27,11 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Dialogues" expanded="True" />
+                <Node name="IntroFox" expanded="True">
+                  <Node name="CageScene.cs" selected="True" />
+                </Node>
                 <Node name="IntroHare" expanded="True" />
               </Node>
-              <Node name="ShakeCamera.cs" selected="True" />
             </Node>
           </Node>
         </State>

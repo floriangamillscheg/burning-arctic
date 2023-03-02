@@ -23,10 +23,16 @@ public class IcePlattform : MonoBehaviour
             collider.isTrigger = true;
             spriteRenderer.enabled = false;
         }
-        else if (collision.CompareTag("IceBall"))
+       
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("IceBall"))
         {
             cutSceneAnimator.SetBool("cutScene4", true);
-             
+
         }
     }
+  
 }

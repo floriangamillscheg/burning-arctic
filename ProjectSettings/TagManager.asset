@@ -20,6 +20,7 @@ TagManager:
   - Ladder
   - DeathZone
   - cutScene4
+  - OilWater
   layers:
   - Default
   - TransparentFX

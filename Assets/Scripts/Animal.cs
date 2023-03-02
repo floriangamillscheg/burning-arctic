@@ -21,8 +21,14 @@ public class Animal : MonoBehaviour
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.CompareTag("OilWater"))
+        {
+            GameManager._Instance.setGameOver();
+        }
         if (collision.CompareTag("Water") && name_ != "Penguin")
         {
+            Debug.Log("touched Water");
             GameManager._Instance.setGameOver();
         }
 

@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void setGameOver()
     {
+        Debug.Log("setGameOver");
         player.SetActive(false);
         GameOverUI.SetActive(true);
 

@@ -36998,6 +36998,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7918208279120576523, guid: 49dc67df0bb0b944fba77d00e1a88d7b, type: 3}
+      propertyPath: mass_
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7918208279120576523, guid: 49dc67df0bb0b944fba77d00e1a88d7b, type: 3}
       propertyPath: name_
       value: ArcticFox
       objectReference: {fileID: 0}

@@ -258,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -1377,7 +1377,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -17740,7 +17740,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -23426,7 +23426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708660138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -49.14002, y: 2.33, z: -9.959746}
+  m_LocalPosition: {x: 49.75998, y: 2.33, z: -9.959746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24153,7 +24153,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -25832,7 +25832,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -26927,7 +26927,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -37078,7 +37078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299110892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.71, z: 0}
+  m_LocalPosition: {x: 0, y: -1.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50988,7 +50988,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.2473166}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -50999,7 +50999,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 63.539997, y: 1.6443456}
+  m_Size: {x: 63.539997, y: 1.854465}
   m_EdgeRadius: 0
 --- !u!95 &1870325740
 Animator:
@@ -51492,7 +51492,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0638014cc52044072ba786c37a0c3495, type: 2}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4847342404279464867, guid: f1797847560864d92b94817c0b0c7ba5, type: 3}
       propertyPath: m_Constraints
@@ -52521,7 +52521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042460679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.3, y: -10.3, z: 0}
+  m_LocalPosition: {x: 83.6, y: -10.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

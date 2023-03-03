@@ -8,28 +8,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Intro_PolarBear.unity
     guid: d20200a5c6d3448d9af1ed8f449cacbc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/introHare.unity
     guid: 7d6dec8fd6c9b41b78913ce8cc1f6be9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/IntroFox.unity
     guid: 568f4364ad97fdd4384c05d040b538b1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Intro_Penguin.unity
     guid: 511a10b40b2f9714a812cd80b5788658
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Penguin_Underwater.unity
     guid: ac2885d9fd57f334b8d67ae4f6415d71
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: efb5d2c271fcd4d4ca7bb0d03b691a45
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EndLevel.unity
     guid: a826a0fa952dc4612b6e9a90e761fc83
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/intermediateLevel.unity
     guid: b23d84bb4a1fd4bd5a8c2b8071145d98
   m_configObjects: {}

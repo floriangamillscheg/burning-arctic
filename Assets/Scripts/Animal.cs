@@ -45,12 +45,12 @@ public class Animal : MonoBehaviour
     {
         if (collision.CompareTag("DeathZone"))
         {
-            if (!(gameObject.name == "Arctic Fox(Clone)" || gameObject.name == "Arctic Fox" && gameObject.GetComponent<Sneaking>().stealthActive))
+            if (!((gameObject.name == "Arctic Fox(Clone)" || gameObject.name == "Arctic Fox") && gameObject.GetComponent<Sneaking>().stealthActive))
             {
+                print(gameObject.name);
                 GameManager._Instance.setGameOver();
             }
         }
-
     }
 
     public int getMass()

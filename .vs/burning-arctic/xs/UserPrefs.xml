@@ -1,19 +1,31 @@
 ﻿<Properties StartupConfiguration="{FB2ADC65-B04D-4246-BB3D-96DBACD2DF13}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/OnClick.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Dialogues/MonologueStarter.cs">
     <Files>
-      <File FileName="Assets/Scripts/IntroHare/Door.cs" Line="41" Column="10" />
-      <File FileName="Assets/Scripts/Stats.cs" />
-      <File FileName="Assets/Scripts/IceBearMovement.cs" />
-      <File FileName="Assets/Scripts/Animal.cs" />
-      <File FileName="Assets/Scripts/StartScreen.cs" />
-      <File FileName="Assets/GameManager.cs" />
-      <File FileName="Assets/Scripts/DisplayInfoBox.cs" />
-      <File FileName="Assets/Scripts/GameOver.cs" />
-      <File FileName="Assets/Scripts/Movement.cs" />
-      <File FileName="Assets/Scripts/PushController.cs" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="32" Column="39" />
+      <File FileName="Assets/StartCutScene.cs" Line="30" Column="50" />
+      <File FileName="Assets/Scripts/Animal.cs" Line="17" Column="32" />
       <File FileName="Assets/Scripts/SwitchAnimals.cs" />
-      <File FileName="Assets/Scripts/IntroHare/HareLevelCutScene.cs" />
-      <File FileName="Assets/OnClick.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/XYMovement.cs" />
+      <File FileName="Assets/TriggerIcicle.cs" />
+      <File FileName="Assets/Scripts/IceCrack.cs" />
+      <File FileName="Assets/IcePlattform.cs" />
+      <File FileName="Assets/TriggerExplosion.cs" Line="106" Column="29" />
+      <File FileName="Assets/GameManager.cs" Line="30" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.render-pipelines.universal@12.1.8/Shaders/2D/Sprite-Lit-Default.shader" />
+      <File FileName="Assets/EnemyCutScene.cs" />
+      <File FileName="Assets/Scripts/IntroHare/Door.cs" />
+      <File FileName="Assets/DoorCutScene.cs" Line="31" Column="33" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueManager.cs" Line="60" Column="1" />
+      <File FileName="Assets/Scripts/Dialogues/DialogueStarter.cs" Line="7" Column="30" />
+      <File FileName="Assets/ShakeCamera.cs" Line="15" Column="38" />
+      <File FileName="Assets/Scripts/IntroFox/CageScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/startBabyDialogue.cs" Line="32" Column="38" />
+      <File FileName="Assets/Scripts/EndScreen.cs" Line="13" Column="44" />
+      <File FileName="Assets/Scripts/DisplayInfoBox.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CaveEntrance.cs" Line="13" Column="64" />
+      <File FileName="Assets/PenguinMovement.cs" Line="40" Column="30" />
+      <File FileName="Assets/Scripts/Dialogues/MonologueStarter.cs" Line="16" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +33,9 @@
           <Node name="burning-arctic" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="IntroHare" expanded="True">
-                  <Node name="Door.cs" selected="True" />
-                </Node>
+                <Node name="Dialogues" expanded="True" />
+                <Node name="IntroFox" expanded="True" selected="True" />
+                <Node name="IntroHare" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -33,7 +45,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="90620921-0e5e-4648-af15-04838c4d06ea" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c97b4913-6d45-4067-a9af-73c38c6a94a8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75e6870e92e19f49a8cb68f0d688291, type: 3}
+  m_Name: begin_dialogue1
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - speakerName: Player
+    text: I can't wait to see my baby again
+    offset: {x: 0, y: 3, z: 0}

@@ -21,7 +21,7 @@ public class XYMovement : MonoBehaviour
     void Update()
     {
         GameObject animalGO = gameObject.GetComponent<SwitchAnimals>().GetCurrentAnimal();
-        var (speed, jump) = animalGO.GetComponent<Animal>().GetMoveStats();
+        var (speed, _, _) = animalGO.GetComponent<Animal>().GetMoveStats();
 
         swimSpeed = speed;
 

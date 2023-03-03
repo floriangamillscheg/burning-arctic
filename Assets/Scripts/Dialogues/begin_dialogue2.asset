@@ -15,13 +15,13 @@ MonoBehaviour:
   dialogueLines:
   - speakerName: Player
     text: Baby bear? I'm home!
-    offset: {x: 0, y: 3, z: 0}
+    offset: {x: 0, y: 1, z: 0}
   - speakerName: Player
     text: Aren't you excited to see me?
     offset: {x: 0, y: 3, z: 0}
   - speakerName: Player
     text: 'Are you here? '
-    offset: {x: 0, y: 3, z: 0}
+    offset: {x: 0, y: 1, z: 0}
   - speakerName: Player
     text: Where is my baby?!
-    offset: {x: 0, y: 3, z: 0}
+    offset: {x: 0, y: 1, z: 0}

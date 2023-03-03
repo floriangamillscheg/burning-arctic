@@ -36,11 +36,11 @@ public class ClimbingLadders : MonoBehaviour
     {
         if (canClimb)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W)||Input.GetKey(KeyCode.UpArrow))
             {
                 GameObject.FindWithTag("Player").transform.Translate(new Vector3(0, 1, 0) * Time.deltaTime * speed);
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.DownArrow))
             {
                 GameObject.FindWithTag("Player").transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * speed);
             }

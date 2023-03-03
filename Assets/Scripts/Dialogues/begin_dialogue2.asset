@@ -25,3 +25,10 @@ MonoBehaviour:
   - speakerName: Player
     text: Where is my baby?!
     offset: {x: 0, y: 1, z: 0}
+  - speakerName: Player
+    text: I need to rescue my little baby! Maybe it has something to do with the
+      boat at the shore that I saw earlier...
+    offset: {x: 0, y: 1, z: 0}
+  - speakerName: Player
+    text: I will check it out!
+    offset: {x: 0, y: 1, z: 0}

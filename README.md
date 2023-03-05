@@ -12,4 +12,3 @@ Unity, GitHub, DeepL, Google Drive, Nextcloud, Dall-E, ChatGPT, Photoshop, Gimp,
 Polar Bear Sprite used from KirillKrysov, Fox Sprite used from [Chozobudgie](https://www.deviantart.com/chozobudgie/art/Arctic-fox-347635252)
 ### Find us here: 
 [Itch.io](https://hpfromaustria.itch.io/burning-arctic)
-
